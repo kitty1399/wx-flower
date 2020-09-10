@@ -1,0 +1,26 @@
+<view>
+    <swiper indicator-dots autoplay>
+        <swiper-item wx:for="{{swiperList}}" wx:key="id">
+            <image src="{{item.url}}"></image>
+        </swiper-item>
+    </swiper>
+    <view wx:for="{{newsList}}" wx:key="index" class="contaniner">
+        <view class="person">
+            <image src="{{item.avatar}}"></image>
+            <text>{{item.date}}</text>
+        </view>
+        <text class="headline">{{item.headline}}</text>
+        <image src="{{item.newImage}}" class="newImage"></image>
+        <text class="news">{{item.news}}</text>
+        <view class="icon">
+            <view>
+                <mp-icon icon="star" color="#666"></mp-icon>
+                <text>{{item.star}}</text>
+            </view>
+            <view>
+                <mp-icon icon="like" color="#666"></mp-icon>
+                <text>{{item.eyes}}</text>
+            </view>
+        </view>
+    </view>
+</view>

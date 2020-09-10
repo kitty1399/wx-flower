@@ -1,0 +1,4 @@
+<view class="welcome">
+    <l-avatar open-data="{{['userAvatarUrl', 'userNickName']}}" placement="bottom" class="l-avatar" />
+    <l-button plain="{{true}}">开启我的小程序</l-button>
+</view>
